@@ -12,6 +12,7 @@ public class GUI extends Main implements ActionListener{
     JPanel button8;
     JPanel button9;
     GUI(){
+        // keyboard pannel 1-9 keys -> zero key will be  on a diffrent file 
         keypad = new JPanel();
         button1 = new JPanel();
         button2 = new JPanel();
@@ -21,9 +22,8 @@ public class GUI extends Main implements ActionListener{
         button6 = new JPanel();
         button8 = new JPanel();
         button9 = new JPanel();
-        keypad.setLayout(new GridLayout(3,3,5));
-
-
+        keypad.setLayout(new GridLayout(3,3,5,0));
+        
         JFrame frame = new JFrame;
         frame.setSize(400,600);
         frame.setVisible(true);
